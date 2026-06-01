@@ -1,0 +1,20 @@
+{
+  "dataset": "Hani89/medical_asr_recording_dataset",
+  "whisper_model": "openai/whisper-small",
+  "bart_model": "facebook/bart-base",
+  "train_samples": 2000,
+  "test_samples": 400,
+  "whisper_max_steps": 1000,
+  "bart_max_steps": 500,
+  "wer": {
+    "baseline_whisper_small": 0.2988,
+    "finetuned_whisper_small": 0.0976,
+    "finetuned_whisper_small_plus_bart": 0.1008
+  },
+  "ablation": {
+    "n_samples": 100,
+    "without_bart": 0.0789,
+    "with_bart": 0.0826,
+    "delta": -0.0037
+  }
+}
